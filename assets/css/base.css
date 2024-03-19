@@ -1,0 +1,40 @@
+:root {
+--logo-font: 'Audiowide', sans-serif;
+--body-font: 'Raleway', sans-serif;
+--color-yellow: #FFCA27;
+--color-green-darkest: #0B3643;
+--color-green-dark: #155E75;
+--color-green-mid: #7CA8B6;
+--color-light: #EAEFF5;
+--color-white: #fff;
+--body-gradient: linear-gradient(
+    45deg,
+    hsl(195deg 73% 9%) 0%,
+    hsl(194deg 72% 13%) 33%,
+    hsl(194deg 71% 17%) 67%,
+    hsl(193deg 71% 22%) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--color-yellow);
+}

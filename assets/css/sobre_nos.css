@@ -1,0 +1,131 @@
+body {
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background-image: var(--body-gradient);
+    min-height: 100vh;
+    color: var(--color-white);
+    letter-spacing: 1px;
+}
+
+/* css header */
+.header-page {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 10%;
+    min-height: 10%;
+}
+
+.header-page ul {
+    display: flex;
+}
+
+.item-menu {
+    gap: 8rem;
+}
+
+#item-menu-sobre {
+    color: var(--color-yellow);
+}
+
+.header-btn {
+    gap: 3rem;
+}
+
+.btn {
+    background-color: var(--color-yellow);
+    border: 0.2rem solid var(--color-yellow);
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.5rem;
+    color: var(--color-green-darkest);
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: transparent;
+    transition: .5s;
+}
+
+/* fim css header */
+
+.container {
+    width: 100%;
+    margin: 10rem auto;
+    width: 80%;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+    border: 0.2rem;
+    background-color: var(--color-green-dark);
+    box-shadow: 0 0.4rem 1.5rem 0 rgba(0, 0, 0, .3);
+}
+
+h2 {
+    color: var(--color-yellow);
+    text-align: center;
+    padding: 5rem 3rem 3rem 3rem;
+    font-weight: 900;
+    font-size: 3.2rem
+}
+
+.info {
+    display: flex;
+    padding: 5rem;
+    gap: 3rem;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.info-1 {
+    display: flex;
+}
+
+img {
+    width: 20%;
+
+}
+
+/* início css footer */
+.footer {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+}
+
+.footer-title {
+    font-weight: 600;
+}
+
+ul {
+    line-height: 2.5;
+}
+
+.icon {
+    letter-spacing: 2rem;
+    font-size: 2rem;
+}
+
+/* fim footer */
