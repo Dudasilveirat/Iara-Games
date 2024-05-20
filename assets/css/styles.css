@@ -2,128 +2,77 @@ body {
     font-family: var(--body-font);
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 1.5;
     background-image: var(--body-gradient);
     min-height: 100vh;
     color: var(--color-white);
-    letter-spacing: 1px;
 }
 
 /* css header */
-.header-page {
-    width: 90%;
-    margin: 3rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.navbar-toggler {
+    color: var(--color-white) !important;
 }
 
-#logo {
-    width: 10%;
-    min-height: 10%;
+.nav-link {
+    color: var(--color-white) !important;
 }
 
-.header-page ul {
-    display: flex;
+.nav-link.active {
+    color: var(--color-green) !important;
 }
 
-.item-menu {
-    gap: 8rem;
+.btn-custom {
+    background-color: var(--color-green);
+    color: var(--color-blue-dark);
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
-#item-menu-loja {
-    color: var(--color-yellow);
-}
-
-.header-btn {
-    gap: 3rem;
-}
-
-.btn {
-    background-color: var(--color-yellow);
-    border: 0.2rem solid var(--color-yellow);
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.5rem;
-    color: var(--color-green-darkest);
-    font-weight: 700;
-    text-align: center;
-}
-
-.btn:hover {
-    background-color: transparent;
-    transition: .5s;
+.btn-custom:hover {
+    background-color: var(--color-green-hover);
+    color: var(--color-blue-dark);
 }
 
 /* fim css header */
 
 
-/* css container */
-.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* fim css container */
-
-
 h2 {
+    font-family: var(--logo-font);
     font-size: 2.4rem;
     padding: 8rem 0 2rem 0;
     text-align: center;
 }
 
-
 /* css category */
-.category ul {
-    padding: 2rem 2rem 3rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.category li {
-    margin: 2rem;
-}
-
 .btn-category {
     background-color: transparent;
-    border: 0.2rem solid var(--color-green-mid);
-    padding: 0.8rem 1.6rem;
-    border-radius: 1.6rem;
-    font-weight: 700;
-    text-align: center;
+    border: 0.2rem solid var(--color-blue);
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 00;
 }
 
 .btn-category:hover {
-    background-color: var(--color-green-mid);
-    color: var(--color-green-darkest);
-    transition: .5s;
+    background-color: var(--color-blue);
+    color: var(--color-white);
 }
 
 /* fim css category */
 
 
 /* css select */
-
 .select-style {
+    margin: 6.4rem 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 2rem;
     gap: 2rem;
 }
 
 #style {
     background-color: transparent;
-    border: 0.2rem solid var(--color-green-mid);
+    border: 0.2rem solid var(--color-blue);
     padding: 0.8rem 1.6rem;
     border-radius: 0.5rem;
-    font-weight: 600;
     color: var(--color-white);
     font-size: 1.6rem;
 }
@@ -131,96 +80,66 @@ h2 {
 .style-option {
     background-color: var(--color-white);
     border-radius: 0.5rem;
-    font-weight: 500;
-    color: var(--color-green-darkest);
+    color: var(--color-blue-dark);
 }
 
 /* fim css select */
 
 
 /* css cards */
-.cards {
-    width: 100%;
-    padding: 2rem 2rem 10rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 5rem;
+.card {
+    padding: 0;
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    border: none;
+    min-height: 50vh;
 }
 
-.games-card {
-    Display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 400px;
-    border-radius: 1rem;
-    border: 0.2rem;
-    background-color: var(--color-green-dark);
-    box-shadow: 0 0.4rem 1.5rem 0 rgba(0, 0, 0, .3);
-}
-
-.games-card:hover {
-    transform: scale(1.1);
+.card:hover {
     transition: .5s;
+    box-shadow: 0 0.4rem 1.5rem 0 var(--color-white);
 }
 
-#poster {
-    border-radius: 0.5rem 0.5rem 0 0;
-    height: 20vh;
+.card-title {
+    font-family: var(--logo-font);
+    font-size: 2rem;
 }
 
-.games-card-body {
-    padding: 2rem;
-}
-
-.game-title {
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: start;
-}
-
-#price {
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding: 2rem 0 1rem 0;
-}
-
-.games-card-body p {
-    font-size: 1.4rem;
-    color: var(--color-light);
-    text-align: start;
-}
-
-.games-card-btn {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+.card-text {
+    font-size: 2rem;
 }
 
 /* fim css cards */
 
 
 /* início css footer */
-.footer {
-    width: 90%;
-    margin: 3rem auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 1.4rem;
+.footer-custom {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
 }
 
-.footer-title {
-    font-weight: 600;
+#text-logo {
+    font-family: 'Audiowide', sans-serif;
 }
 
-ul {
-    line-height: 2.5;
-}
-
-.icon {
+.footer-custom h5 {
     font-size: 2rem;
-    letter-spacing: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-list ul {
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 1.6rem;
+}
+
+.footer-socialMedia ul {
+    display: flex;
+    font-size: 2.4rem;
+    padding: 0;
+    gap: 2rem;
 }
 
 /* fim footer */

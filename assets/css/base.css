@@ -1,18 +1,18 @@
 :root {
---logo-font: 'Audiowide', sans-serif;
---body-font: 'Raleway', sans-serif;
---color-yellow: #FFCA27;
---color-green-darkest: #0B3643;
---color-green-dark: #155E75;
---color-green-mid: #7CA8B6;
---color-light: #EAEFF5;
---color-white: #fff;
---body-gradient: linear-gradient(
-    45deg,
-    hsl(195deg 73% 9%) 0%,
-    hsl(194deg 72% 13%) 33%,
-    hsl(194deg 71% 17%) 67%,
-    hsl(193deg 71% 22%) 100%);
+    --logo-font: 'Audiowide', sans-serif;
+    --body-font: "JetBrains Mono", monospace;
+    --color-green: #cfd600;
+    --color-green-hover: #bac100;
+    --color-green-active: #a6ab00;
+    --color-blue-dark: #0b3643;
+    --color-blue-mid: #0f4b5d;
+    --color-blue: #1c88a9;
+    --color-blue-light: #7ca8b6;
+    --color-white: #fff;
+    --body-gradient: linear-gradient(0deg,
+            #166983 0%,
+            #0D4050 50%,
+            #0B3643 100%);
 }
 
 * {
@@ -25,7 +25,8 @@ html {
     font-size: 62.5%;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -33,8 +34,9 @@ a {
     text-decoration: none;
     color: var(--color-white);
     transition: .5s;
+    cursor: pointer;
 }
 
 a:hover {
-    color: var(--color-yellow);
+    color: var(--color-green);
 }

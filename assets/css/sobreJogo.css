@@ -1,4 +1,137 @@
 body {
-    background-color: slategray;
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-image: var(--body-gradient);
+    min-height: 100vh;
+    color: var(--color-white);
 }
 
+.navbar-toggler {
+    color: var(--color-white) !important;
+}
+
+.nav-link {
+    color: var(--color-white) !important;
+}
+
+.nav-link.active {
+    color: var(--color-green) !important;
+}
+
+.btn-custom {
+    background-color: var(--color-green);
+    color: var(--color-blue-dark);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.btn-custom:hover {
+    background-color: var(--color-green-hover);
+    color: var(--color-blue-dark);
+    font-size: 1.6rem;
+}
+
+.bread-custom {
+    margin-top: 10rem;
+}
+
+.breadcrumb-item.active {
+    color: var(--color-green) !important;
+}
+
+.card {
+    background-color: var(--color-blue-dark);
+    border: none;
+    color: var(--color-white);
+}
+
+.card-body {
+    margin: 2.4rem 1.6rem;
+}
+
+.card-title {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 2.4rem;
+}
+
+.badge-custom {
+    background-color: var(--color-blue-light);
+    color: var(--color-blue-dark);
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.card-body h4 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.card-body p {
+    margin-bottom: 2.4rem;
+}
+
+.banner-custom {
+    height: 100%;
+}
+
+.age-rating-content h3 {
+    font-size: 2rem;
+}
+
+.age-rating-info {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.age-rating-info p {
+    margin: 0;
+}
+
+.about-game {
+    margin-top: 6.4rem;
+}
+
+.about-game h3 {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+}
+
+.release-info {
+    margin-top: 4rem;
+}
+
+.release-info ul {
+    padding: 0;
+}
+
+.footer-custom {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+#text-logo {
+    font-family: 'Audiowide', sans-serif;
+}
+
+.footer-custom h5 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-list ul {
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 1.6rem;
+}
+
+.footer-socialMedia ul {
+    display: flex;
+    font-size: 2.4rem;
+    padding: 0;
+    gap: 2rem;
+}

@@ -1,16 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Iara Games</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:ital@0;1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!-- Google Icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- Font Awesome: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -23,166 +35,201 @@
 </head>
 
 <body>
-    <!-- header da página -->
-    <header class="header-page">
-        <img src="./assets/imagens/LOGO-1.png" alt="Logo Iara Games" id="logo">
-        <nav>
-            <ul class="item-menu">
-                <li><a href="">Início</a></li>
-                <li><a href="" id="item-menu-loja">Loja</a></li>
-                <li><a href="./assets/pages/sobre_nos.html" target="_blank">Sobre nós</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="header-btn">
-                <li><a href="" class="btn">Iniciar sessão</a></li>
-                <li><a href="" class="btn">Criar uma conta</a></li>
-            </ul>
+    <!-- header -->
+    <header class="container mt-3">
+        <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+            <div class="container p-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/imagens/LOGO-1.png" alt="Logo Iara Games" width="116" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="collapse navbar-collapse gap-4" id="navbarText">
+                    <ul class="navbar-nav mx-auto p-2 gap-5">
+                        <li class="nav-item gap-2">
+                            <a class="nav-link active" href="#loja">Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#forum">Fórum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre Nós</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-custom" type="submit">Iniciar sessão</button>
+                    <button class="btn btn-custom" type="submit">Criar conta</button>
+                </div>
+            </div>
         </nav>
     </header>
-    <!-- fim header da página -->
-
+    <!-- fim header -->
 
     <!-- conteúdo da página -->
-    <div class="container">
-        <h2>Encontre os melhores jogos brasileiros aqui!</h2>
+    <h2>Encontre os melhores jogos brasileiros aqui!</h2>
 
-        <!-- início jogos categorias -->
-        <section class="category">
-            <ul>
-                <li><a href="" class="btn-category">Ação</a></li>
-                <li><a href="" class="btn-category">Aventura</a></li>
-                <li><a href="" class="btn-category">RPG</a></li>
-                <li><a href="" class="btn-category">Estratégia</a></li>
-                <li><a href="" class="btn-category">Esportes</a></li>
-                <li><a href="" class="btn-category">Quebra-Cabeças</a></li>
-                <li><a href="" class="btn-category">Simulação</a></li>
-                <li><a href="" class="btn-category">Corrida</a></li>
-                <li><a href="" class="btn-category">Terror</a></li>
-                <li><a href="" class="btn-category">Ficção Científica</a></li>
-            </ul>
-        </section>
-        <!-- fim jogos categorias -->
-
-
-        <!-- início ordernar por -->
-        <div class="select-style">
-            <label for="">Ordenado por:</label>
-            <select name="order" id="style">
-                <option value="1" class="style-option">Em destaque</option>
-                <option value="2" class="style-option">Título de A-Z</option>
-                <option value="3" class="style-option">Mais comprados</option>
-                <option value="4" class="style-option">Maior avaliação</option>
-            </select>
+    <!-- início jogos categorias -->
+    <section class="container">
+        <div class="d-flex flex-wrap justify-content-center">
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Ação</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2 type=" submit">Aventura</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">RPG</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Estratégia</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Esportes</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Quebra-Cabeças</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Simulação</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Corrida</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Terror</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Ficção Científica</button>
         </div>
-        <!-- fim ordernar por -->
+    </section>
+    <!-- fim jogos categorias -->
 
 
-        <!-- início cards jogos-->
-        <section class="cards">
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-1.jpg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">Aritana and the Harpy's Feather</a>
-                    <p id="price">R$ 19,00</p>
-                    <p>Duaik Entretenimento</p>
-                </div>
-            </div>
-
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-2.jpeg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">A Lenda do Herói</a>
-                    <p id="price">R$ 29,99</p>
-                    <p>Dumativa, Castro Brothers</p>
-                </div>
-            </div>
-
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-3.jpeg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">Knights of Pen and Paper</a>
-                    <p id="price">R$ 71,99</p>
-                    <p>Behold Studios, Seaven Studio</p>
-                </div>
-            </div>
-
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-4.jpg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">Outlive</a>
-                    <p id="price">R$ 41,99</p>
-                    <p>Bossco Games</p>
-                </div>
-            </div>
-
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-5.jpg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">Horizon Chase Turbo</a>
-                    <p id="price">R$ 49,99</p>
-                    <p>AQUIRIS</p>
-                </div>
-            </div>
-
-
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-6.jpg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">ChromaGun</a>
-                    <p id="price">R$ 25,99</p>
-                    <p>Pixel Maniacs</p>
-                </div>
-            </div>
-
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-7.jpeg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">Relic Hunters Zero</a>
-                    <p id="price">R$ 23,50</p>
-                    <p>Rogue Snail</p>
-                </div>
-            </div>
-
-            <div class="games-card">
-                <img src="./assets/imagens/JOGO-8.jpg" alt="Poster do jogo" id="poster">
-                <div class="games-card-body">
-                    <a href="" class="game-title">Distortions</a>
-                    <p id="price">R$ 9,99</p>
-                    <p>Among Giants</p>
-                </div>
-            </div>
-        </section>
-        <!-- fim cards jogos -->
+    <!-- início ordernar por -->
+    <div class="select-style">
+        <label for="">Ordenado por:</label>
+        <select name="order" id="style">
+            <option value="1" class="style-option">Título de A-Z</option>
+            <option value="2" class="style-option">Título de Z-A</option>
+            <option value="3" class="style-option">Mais comprados</option>
+            <option value="4" class="style-option">Maior avaliação</option>
+        </select>
     </div>
+    <!-- fim ordernar por -->
+
+
+    <!-- início cards jogos-->
+    <section class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens/JOGO-1.jpg" class="card-img-top card-custom" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">Horizon Chase Turbo</a>
+                        <p class="card-text">R$ 49,99</p>
+                        <p>PC, PS4, Xbox One...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens/JOGO-2.jpeg" class="card-img-top" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">Racco Venture</a>
+                        <p class="card-text">R$ 49,99</p>
+                        <p>PC, PS5, Xbox One...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens/JOGO-3.jpeg" class="card-img-top" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">Adore</a>
+                        <p class="card-text">R$ 49,99</p>
+                        <p>PC, PS5, Xbox One...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens/JOGO-4.jpg" class="card-img-top" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">MARS 2120</a>
+                        <p class="card-text">R$ 49,99</p>
+                        <p>PC, PS5, Xbox One...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens//JOGO-5.jpg" class="card-img-top" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">99Vidas</a>
+                        <p class="card-text">R$ 29,99</p>
+                        <p>PC, PS4, Xbox One...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens/JOGO-6.jpg" class="card-img-top" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">Aritana and the Harpy's Feather</a>
+                        <p class="card-text">R$ 19,90</p>
+                        <p>Microsoft Windows...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens/JOGO-7.jpeg" class="card-img-top" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">Herodes</a>
+                        <p class="card-text">R$ 16,99</p>
+                        <p>PC, PS5, Xbox One...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./assets/imagens/JOGO-8.jpg" class="card-img-top" alt="banner">
+                    <div class="card-body">
+                        <a class="card-title">Bem feito</a>
+                        <p class="card-text">R$ 14,99</p>
+                        <p>Microsoft Windows</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fim cards jogos -->
+
     <!-- fim conteúdo da página -->
 
 
-    <!-- início do footer -->
-    <footer class="footer">
-        <nav>
-            <ul>
-                <p class="footer-title">Iara Games</p>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Dúvidas frequentes</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <p class="footer-title">Comunidade</p>
-                <li><a href="">Fórum da Iara Games</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <p class="footer-title">Siga-nos nas Redes Sociais</p>
-                <a href=""><i class="fa-brands fa-instagram icon"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter icon"></i></a>
-                <a href=""><i class="fa-brands fa-discord icon"></i></a>
-            </ul>
-        </nav>
+    <!-- footer -->
+    <footer class="container footer-custom">
+        <div class="row mt-5">
+            <div class="col-4">
+                <h5 id="text-logo">IARA GAMES</h5>
+                <p>© 2024 Iara Games.</p>
+            </div>
+            <div class="col-4">
+                <h5>Fale conosco</h5>
+                <div class="footer-list">
+                    <ul>
+                        <li><a href="#">E-mail e telefone</a></li>
+                        <li><a href="#">Perguntas frequentes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <h5>Siga nas redes sociais</h5>
+                <div class="footer-socialMedia">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
     </footer>
     <!-- fim do footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
