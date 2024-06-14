@@ -16,6 +16,10 @@ body {
     color: var(--color-white) !important;
 }
 
+.nav-link:hover {
+    color: var(--color-green)!important;
+}
+
 .nav-link.active {
     color: var(--color-green) !important;
 }
@@ -24,7 +28,7 @@ body {
     background-color: var(--color-green);
     color: var(--color-blue-dark);
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .btn-custom:hover {
@@ -35,20 +39,20 @@ body {
 /* fim css header */
 
 
-h2 {
+/* css categorias */
+.title {
     font-family: var(--logo-font);
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     padding: 8rem 0 2rem 0;
     text-align: center;
 }
 
-/* css category */
 .btn-category {
     background-color: transparent;
     border: 0.2rem solid var(--color-blue);
     color: var(--color-white);
     font-size: 1.6rem;
-    font-weight: 00;
+    font-weight: 500;
 }
 
 .btn-category:hover {
@@ -56,28 +60,23 @@ h2 {
     color: var(--color-white);
 }
 
-/* fim css category */
+/* fim css categorias */
 
 
 /* css select */
-.select-style {
-    margin: 6.4rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2rem;
+.select {
+    margin-top: 10rem;
 }
 
-#style {
+.select-custom {
     background-color: transparent;
     border: 0.2rem solid var(--color-blue);
-    padding: 0.8rem 1.6rem;
-    border-radius: 0.5rem;
-    color: var(--color-white);
+    color: var(--color-white) !important;
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
-.style-option {
+.option-custom {
     background-color: var(--color-white);
     border-radius: 0.5rem;
     color: var(--color-blue-dark);
@@ -92,12 +91,16 @@ h2 {
     background-color: var(--color-blue-dark);
     color: var(--color-white);
     border: none;
-    min-height: 50vh;
+    height: 50vh;
 }
 
 .card:hover {
     transition: .5s;
     box-shadow: 0 0.4rem 1.5rem 0 var(--color-white);
+}
+
+.card-img-top {
+    height: 50%;
 }
 
 .card-title {

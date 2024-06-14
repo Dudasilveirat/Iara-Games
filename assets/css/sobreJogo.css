@@ -7,6 +7,7 @@ body {
     color: var(--color-white);
 }
 
+/* css header */
 .navbar-toggler {
     color: var(--color-white) !important;
 }
@@ -15,7 +16,7 @@ body {
     color: var(--color-white) !important;
 }
 
-.nav-link.active {
+.nav-link:hover {
     color: var(--color-green) !important;
 }
 
@@ -23,7 +24,7 @@ body {
     background-color: var(--color-green);
     color: var(--color-blue-dark);
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .btn-custom:hover {
@@ -32,6 +33,10 @@ body {
     font-size: 1.6rem;
 }
 
+/* fim css header */
+
+
+/* css breadcrumb */
 .bread-custom {
     margin-top: 10rem;
 }
@@ -40,6 +45,10 @@ body {
     color: var(--color-green) !important;
 }
 
+/* fim css breadcrumb */
+
+
+/* css card */
 .card {
     background-color: var(--color-blue-dark);
     border: none;
@@ -76,6 +85,10 @@ body {
     height: 100%;
 }
 
+/* fim css card */
+
+
+/* css class indicativa */
 .age-rating-content h3 {
     font-size: 2rem;
 }
@@ -90,6 +103,10 @@ body {
     margin: 0;
 }
 
+/* fim css class indicativa */
+
+
+/* css sobre */
 .about-game {
     margin-top: 6.4rem;
 }
@@ -99,6 +116,10 @@ body {
     margin-bottom: 2.4rem;
 }
 
+/* fim css sobre */
+
+
+/* css infos adicionais */
 .release-info {
     margin-top: 4rem;
 }
@@ -107,6 +128,10 @@ body {
     padding: 0;
 }
 
+/* fim css infos adicionais*/
+
+
+/* css footer */
 .footer-custom {
     margin-top: 10rem;
     margin-bottom: 4rem;
@@ -135,3 +160,5 @@ body {
     padding: 0;
     gap: 2rem;
 }
+
+/* fim css footer */

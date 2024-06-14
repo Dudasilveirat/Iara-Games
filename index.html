@@ -66,14 +66,12 @@
     </header>
     <!-- fim header -->
 
-    <!-- conteúdo da página -->
-    <h2>Encontre os melhores jogos brasileiros aqui!</h2>
-
     <!-- início jogos categorias -->
     <section class="container">
+        <h2 class="title">Encontre os melhores jogos brasileiros aqui!</h2>
         <div class="d-flex flex-wrap justify-content-center">
             <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Ação</button>
-            <button class="btn rounded-pill btn-category mx-2 my-2 type=" submit">Aventura</button>
+            <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Aventura</button>
             <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">RPG</button>
             <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Estratégia</button>
             <button class="btn rounded-pill btn-category mx-2 my-2" type="submit">Esportes</button>
@@ -87,105 +85,109 @@
     <!-- fim jogos categorias -->
 
 
-    <!-- início ordernar por -->
-    <div class="select-style">
-        <label for="">Ordenado por:</label>
-        <select name="order" id="style">
-            <option value="1" class="style-option">Título de A-Z</option>
-            <option value="2" class="style-option">Título de Z-A</option>
-            <option value="3" class="style-option">Mais comprados</option>
-            <option value="4" class="style-option">Maior avaliação</option>
-        </select>
-    </div>
-    <!-- fim ordernar por -->
+    <!-- início select -->
+    <section class="container mt-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-between select">
+            <h2>Jogos disponíveis</h2>
+            <div class="row col-12 col-md-4 col-lg-3">
+                <select class="form-select select-custom" aria-label="Default select example">
+                    <option class="option-custom" selected>Mais comprados</option>
+                    <option class="option-custom" value="1">Título de A-Z</option>
+                    <option class="option-custom" value="2">Título de Z-A</option>
+                    <option class="option-custom" value="3">Maior avaliação</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <!-- fim select -->
 
 
     <!-- início cards jogos-->
-    <section class="container">
+    <section class="container mt-4">
         <div class="row g-4">
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="./assets/imagens/JOGO-1.jpg" class="card-img-top card-custom" alt="banner">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="./assets/imagens/JOGO-1.jpg" class="card-img-top" alt="banner">
                     <div class="card-body">
-                        <a class="card-title">Horizon Chase Turbo</a>
-                        <p class="card-text">R$ 49,99</p>
+                        <a class="card-title" href="./assets/pages/sobreJogo.html">Horizon Chase Turbo</a>
+                        <p class="card-text mt-5">R$ 49,99</p>
                         <p>PC, PS4, Xbox One...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
                     <img src="./assets/imagens/JOGO-2.jpeg" class="card-img-top" alt="banner">
                     <div class="card-body">
                         <a class="card-title">Racco Venture</a>
-                        <p class="card-text">R$ 49,99</p>
+                        <p class="card-text mt-5">R$ 49,99</p>
                         <p>PC, PS5, Xbox One...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
                     <img src="./assets/imagens/JOGO-3.jpeg" class="card-img-top" alt="banner">
                     <div class="card-body">
                         <a class="card-title">Adore</a>
-                        <p class="card-text">R$ 49,99</p>
+                        <p class="card-text mt-5">R$ 49,99</p>
                         <p>PC, PS5, Xbox One...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
                     <img src="./assets/imagens/JOGO-4.jpg" class="card-img-top" alt="banner">
                     <div class="card-body">
                         <a class="card-title">MARS 2120</a>
-                        <p class="card-text">R$ 49,99</p>
+                        <p class="card-text mt-5">R$ 49,99</p>
                         <p>PC, PS5, Xbox One...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
                     <img src="./assets/imagens//JOGO-5.jpg" class="card-img-top" alt="banner">
                     <div class="card-body">
                         <a class="card-title">99Vidas</a>
-                        <p class="card-text">R$ 29,99</p>
+                        <p class="card-text mt-5">R$ 29,99</p>
                         <p>PC, PS4, Xbox One...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
                     <img src="./assets/imagens/JOGO-6.jpg" class="card-img-top" alt="banner">
                     <div class="card-body">
                         <a class="card-title">Aritana and the Harpy's Feather</a>
-                        <p class="card-text">R$ 19,90</p>
+                        <p class="card-text mt-5">R$ 19,90</p>
                         <p>Microsoft Windows...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
                     <img src="./assets/imagens/JOGO-7.jpeg" class="card-img-top" alt="banner">
                     <div class="card-body">
                         <a class="card-title">Herodes</a>
-                        <p class="card-text">R$ 16,99</p>
+                        <p class="card-text mt-5">R$ 16,99</p>
                         <p>PC, PS5, Xbox One...</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 d-flex flex-column">
                     <img src="./assets/imagens/JOGO-8.jpg" class="card-img-top" alt="banner">
                     <div class="card-body">
                         <a class="card-title">Bem feito</a>
-                        <p class="card-text">R$ 14,99</p>
+                        <p class="card-text mt-5">R$ 14,99</p>
                         <p>Microsoft Windows</p>
                     </div>
                 </div>
@@ -193,8 +195,6 @@
         </div>
     </section>
     <!-- fim cards jogos -->
-
-    <!-- fim conteúdo da página -->
 
 
     <!-- footer -->
