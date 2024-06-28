@@ -1,6 +1,6 @@
 :root {
-    --logo-font: 'Audiowide', sans-serif;
-    --body-font: "JetBrains Mono", monospace;
+    --title-font: "Chakra Petch", sans-serif;
+    --text-font: "Montserrat", sans-serif;
     --color-green: #cfd600;
     --color-green-hover: #bac100;
     --color-green-active: #a6ab00;

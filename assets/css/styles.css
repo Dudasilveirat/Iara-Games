@@ -1,5 +1,5 @@
 body {
-    font-family: var(--body-font);
+    font-family: var(--text-font);
     font-size: 1.6rem;
     font-weight: 500;
     background-image: var(--body-gradient);
@@ -26,23 +26,47 @@ body {
 
 .btn-custom {
     background-color: var(--color-green);
-    color: var(--color-blue-dark);
+    border: 2px solid var(--color-green) !important;
+    color: var(--color-blue-dark) !important;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
 .btn-custom:hover {
     background-color: var(--color-green-hover);
+    border: 2px solid var(--color-green-hover) !important;
     color: var(--color-blue-dark);
 }
 
+.btn-custom:active {
+    background-color: var(--color-green-active) !important;
+    border: 2px solid var(--color-green-active) !important;
+    color: var(--color-blue-dark) !important;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border: 2px solid var(--color-green) !important;
+    color: var(--color-green) !important;
+}
+
+.btn-outline:hover {
+    border: 2px solid var(--color-green-hover) !important;
+    color: var(--color-green-hover) !important;
+}
+
+.btn-outline:active {
+    background-color: transparent !important;
+    border: 2px solid var(--color-green-active) !important;
+    color: var(--color-green-active) !important;
+}
 /* fim css header */
 
 
 /* css categorias */
 .title {
-    font-family: var(--logo-font);
-    font-size: 3.2rem;
+    font-family: var(--title-font);
+    font-size: 3.6rem;
     padding: 8rem 0 2rem 0;
     text-align: center;
 }
@@ -68,6 +92,10 @@ body {
     margin-top: 10rem;
 }
 
+.title-select {
+    font-family: var(--title-font);
+    font-size: 2.4rem;
+}
 .select-custom {
     background-color: transparent;
     border: 0.2rem solid var(--color-blue);
@@ -104,8 +132,8 @@ body {
 }
 
 .card-title {
-    font-family: var(--logo-font);
-    font-size: 2rem;
+    font-family: var(--title-font);
+    font-size: 2.4rem;
 }
 
 .card-text {
@@ -126,6 +154,7 @@ body {
 }
 
 .footer-custom h5 {
+    font-family: var(--title-font);
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -140,7 +169,7 @@ body {
 
 .footer-socialMedia ul {
     display: flex;
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 0;
     gap: 2rem;
 }

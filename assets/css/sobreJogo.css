@@ -1,5 +1,5 @@
 body {
-    font-family: var(--body-font);
+    font-family: var(--text-font);
     font-size: 1.6rem;
     font-weight: 500;
     background-image: var(--body-gradient);
@@ -22,15 +22,39 @@ body {
 
 .btn-custom {
     background-color: var(--color-green);
-    color: var(--color-blue-dark);
+    border: 2px solid var(--color-green) !important;
+    color: var(--color-blue-dark) !important;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
 .btn-custom:hover {
     background-color: var(--color-green-hover);
+    border: 2px solid var(--color-green-hover) !important;
     color: var(--color-blue-dark);
-    font-size: 1.6rem;
+}
+
+.btn-custom:active {
+    background-color: var(--color-green-active) !important;
+    border: 2px solid var(--color-green-active) !important;
+    color: var(--color-blue-dark) !important;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border: 2px solid var(--color-green) !important;
+    color: var(--color-green) !important;
+}
+
+.btn-outline:hover {
+    border: 2px solid var(--color-green-hover) !important;
+    color: var(--color-green-hover) !important;
+}
+
+.btn-outline:active {
+    background-color: transparent !important;
+    border: 2px solid var(--color-green-active) !important;
+    color: var(--color-green-active) !important;
 }
 
 /* fim css header */
@@ -60,8 +84,8 @@ body {
 }
 
 .card-title {
-    font-family: 'Audiowide', sans-serif;
-    font-size: 2.4rem;
+    font-family: var(--title-font);
+    font-size: 3.2rem;
 }
 
 .badge-custom {
@@ -90,7 +114,8 @@ body {
 
 /* css class indicativa */
 .age-rating-content h3 {
-    font-size: 2rem;
+    font-family: var(--title-font);
+    font-size: 2.4rem;
 }
 
 .age-rating-info {
@@ -112,7 +137,8 @@ body {
 }
 
 .about-game h3 {
-    font-size: 2rem;
+    font-family: var(--title-font);
+    font-size: 2.4rem;
     margin-bottom: 2.4rem;
 }
 
@@ -142,6 +168,7 @@ body {
 }
 
 .footer-custom h5 {
+    font-family: var(--title-font);
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -156,7 +183,7 @@ body {
 
 .footer-socialMedia ul {
     display: flex;
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 0;
     gap: 2rem;
 }

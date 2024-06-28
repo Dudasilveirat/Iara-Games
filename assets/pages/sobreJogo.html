@@ -13,12 +13,12 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- Google Icon -->
     <link rel="stylesheet"
@@ -58,8 +58,9 @@
                             <a class="nav-link" href="#sobre">Sobre Nós</a>
                         </li>
                     </ul>
-                    <button class="btn btn-custom" type="submit">Iniciar sessão</button>
-                    <button class="btn btn-custom" type="submit">Criar conta</button>
+                    <button class="btn btn-custom btn-outline" type="submit" onclick="getQuote()"><i
+                            class="fa-solid fa-dollar-sign"></i>Converter</button>
+                    <button class="btn btn-primary btn-custom" type="submit">Acesse sua conta</button>
                 </div>
             </div>
         </nav>
@@ -92,7 +93,7 @@
                     <div class="card-body">
                         <h2 class="card-title">Horizon Chase Turbo</h2>
                         <span class="badge rounded-pill badge-custom">Corrida</span>
-                        <h4>R$49,00</h4>
+                        <h4><span class="moeda">R$</span><span class="valor-moeda"> 39,90</span></h4>
                         <p>PC, PlayStation 4, Xbox One e Nintendo Switch</p>
                         <div class="d-grid">
                             <button class="btn btn-custom" type="submit">Comprar</button>
@@ -103,6 +104,7 @@
         </div>
     </section>
     <!-- fim card do jogo-->
+
 
     <!-- Class indicativa -->
     <section class="container mt-5 age-rating-content">
@@ -137,7 +139,7 @@
     <footer class="container footer-custom">
         <div class="row mt-5">
             <div class="col-4">
-                <h5 id="text-logo">IARA GAMES</h5>
+                <img src="../imagens/LOGO - ICON.png" alt="Logo Iara Games" width="40" height="40" class="mb-3">
                 <p>© 2024 Iara Games.</p>
             </div>
             <div class="col-4">
@@ -167,6 +169,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
